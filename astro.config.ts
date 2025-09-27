@@ -165,6 +165,9 @@ export default defineConfig({
 		react(),
 	],
 	vite: {
+		build: {
+			sourcemap: true,
+		},
 		resolve: {
 			alias: {
 				"./Page.astro": fileURLToPath(
